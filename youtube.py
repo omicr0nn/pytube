@@ -30,9 +30,9 @@ def convert_to_mp3(video_url, output_folder):
         new_file_path = os.path.join(output_folder, f"{yt.title}.mp3")
         os.rename(old_file_path, new_file_path)
 
-        print(Fore.GREEN + "[+] Video download and conversion complete:", new_file_path + Fore.RESET)
+        print("Video download and conversion complete:", new_file_path)
     except Exception as e:
-        print(Fore.RED + "[-] Hata (URL: {}):".format(video_url), e + Fore.RESET)
+        print(f"Hata (URL: {video_url}):", e)
 
 def convert_to_mp4(video_url, output_folder):
     try:
@@ -44,9 +44,9 @@ def convert_to_mp4(video_url, output_folder):
         video_stream = yt.streams.get_highest_resolution()
         video_stream.download(output_folder)
 
-        print(Fore.GREEN + "[+] Video download complete:", output_path + Fore.RESET)
+        print("Video download complete:", output_path)
     except Exception as e:
-        print(Fore.RED + "[-] Hata (URL: {}):".format(video_url), e + Fore.RESET)
+        print(f"Hata (URL: {video_url}):", e)
 
 def show_contact_info():
     system("cls||clear")
