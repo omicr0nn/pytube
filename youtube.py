@@ -1,5 +1,4 @@
 # Creator by omicr0nn
-# Creator by omicr0nn
 import os
 from pytube import YouTube
 from colorama import Fore, Style
@@ -103,7 +102,5 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-# Coding by omicr0n
 
 # Coding by omicr0n
