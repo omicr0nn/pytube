@@ -1,4 +1,5 @@
 # Creator by omicr0nn
+# Creator by omicr0nn
 import os
 from pytube import YouTube
 from colorama import Fore, Style
@@ -30,9 +31,9 @@ def convert_to_mp3(video_url, output_folder):
         new_file_path = os.path.join(output_folder, f"{yt.title}.mp3")
         os.rename(old_file_path, new_file_path)
 
-        print("Video download and conversion complete:", new_file_path)
+        print(Fore.GREEN + "[+] Video download and conversion complete:", new_file_path + Fore.RESET)
     except Exception as e:
-        print(f"Hata (URL: {video_url}):", e)
+        print(Fore.RED + "[-] Hata (URL: {}):".format(video_url), e + Fore.RESET)
 
 def convert_to_mp4(video_url, output_folder):
     try:
@@ -44,9 +45,9 @@ def convert_to_mp4(video_url, output_folder):
         video_stream = yt.streams.get_highest_resolution()
         video_stream.download(output_folder)
 
-        print("Video download complete:", output_path)
+        print(Fore.GREEN + "[+] Video download complete:", output_path + Fore.RESET)
     except Exception as e:
-        print(f"Hata (URL: {video_url}):", e)
+        print(Fore.RED + "[-] Hata (URL: {}):".format(video_url), e + Fore.RESET)
 
 def show_contact_info():
     system("cls||clear")
@@ -54,7 +55,7 @@ def show_contact_info():
     print("GitHub: " + Fore.GREEN + "github.com/omicr0nn" + Fore.RESET)
 
 def main():
-    input_file = "videos.txt"
+    input_file = "links.txt"
     mp3_output_folder = "mp3"
     mp4_output_folder = "mp4"
 
@@ -102,5 +103,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# Coding by omicr0n
 
 # Coding by omicr0n
