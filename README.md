@@ -1,16 +1,33 @@
-## description
+# Video Downloader App
 
-#### Fill in the links.txt file and choose the method you want and start using
+This is a simple Video Downloader App created by omicr0nn.
 
-# !Usage
+## Introduction
 
-#### git clone https://github.com/omicr0nn/pytube
+The app allows you to download videos from YouTube and convert them to either MP3 or MP4 formats.
 
-#### cd pytube
+## Usage
 
-#### start install.bat (pip install os, pytube, colorama)
+1. Convert to MP3
+2. Convert to MP4
+3. Contact Information
+4. Exit
 
-#### run start.bat (python youtube.py)
+## Installation
+
+```bash
+git clone https://github.com/omicr0nn/pytube
+```
+```bash
+cd pytube
+```
+Make sure you have the required libraries installed:
+```bash
+pip install pytube colorama
+```
+```bash
+python youtube.py
+```
 
 # With ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
