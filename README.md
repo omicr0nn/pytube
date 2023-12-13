@@ -23,12 +23,14 @@ cd pytube
 ```
 Make sure you have the required libraries installed:
 ```bash
-pip install pytube colorama
+pip install colorama pytube
 ```
 run:
 ```bash
 python youtube.py
 ```
+
+![Kali](https://i.hizliresim.com/km1pc25.png)
 
 # With ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
