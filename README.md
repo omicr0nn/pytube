@@ -25,6 +25,7 @@ Make sure you have the required libraries installed:
 ```bash
 pip install pytube colorama
 ```
+run:
 ```bash
 python youtube.py
 ```
